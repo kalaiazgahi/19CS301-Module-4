@@ -34,37 +34,39 @@ Thus the python program for printing a size of dictionary, was implemented and e
 
 Exp.No:4(b)	EXCEPTION- EXCEPTION HANDLING
 ### AIM
-To create a short program that prompts the user for a list of grades separated by commas, Split the string into individual grades and use a list comprehension to convert each string to an integer, use a try statement to inform the user when the values they entered cannot be converted.
+To write a Python program for solving the IndexError using exception handling when trying to access an index that is out of the valid range of a list.
+
+
 ### ALGORITHM
 
-Step 1:	 Begin the program.
+Step 1: Begin the program.
 
-Step 2:	 Read a string from the user using input() and store it in input_str.
+Step 2: Assign the variable L with 3 elements: 'laptop', 'mobile', 'pen'.
 
-Step 3:	 Split the input_str using commas (,) to create a list of grades.
+Step 3: Attempt to access the element at index 4 of the list L.
 
-Step 4:	 Use a try block to attempt converting each item in the grades list to an integer and store the result in l1. If an error occurs, proceed to step 6.
+Step 4: Use a try block to catch any index errors that may occur.
 
-Step 5:	 If the conversion is successful, print the list l1 containing the integer values.
+Step 5: If the index is valid, print the element.
 
-Step 6:	 If there is an error during conversion (for example, if the input is not a valid number), print an error message "The grades you entered were in an invalid format." and print 
-         the original grades list.
+Step 6: If an IndexError occurs, print the message "check index range".
+
+Step 7: Terminate the program.
+
+
 
 Step 7:	 Terminate the program.
 ### PROGRAM
 ```input_str=input()
-grades=input_str.split(',')
 try:
-    l1=[int(item) for item in grades]
+    L=['laptop','mobile','pen']
+    print(L(4))
 except:
-    print("The grades you entered were in an invalid format.")
-    print(grades)
-else:
-    l1=[int(item) for item in grades]
-    print(l1)
+        print('check index range')
 ```
 ### OUTPUT
- ![image](https://github.com/user-attachments/assets/86726500-ef3e-4a14-a878-cb7b5c0886c5)
+![image](https://github.com/user-attachments/assets/815319ea-f628-4fb8-a957-97e6d798bb84)
+
 
 ### RESULT
 Thus the python program for handling exceptions was implemented and executed successfully.
@@ -148,7 +150,7 @@ u=umbrella()
 u.rain(r)
 ```
 ### OUTPUT
-![image](https://github.com/user-attachments/assets/aa51e6ae-8312-4d49-85a6-774bfead5223)
+![image](https://github.com/user-attachments/assets/264c813c-7810-4646-83c2-3665cbe7a0b9)
 
  
 ### RESULT
